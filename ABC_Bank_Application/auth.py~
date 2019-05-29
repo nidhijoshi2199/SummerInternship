@@ -3,13 +3,12 @@ import shelve
 import os
 import getpass
 
-
 def login(acc_no):
     db = shelve.open('database/bank.db')
     if acc_no in db.keys():
-        password = getpass.getpass ("Enter your password: ")
+        password = getpass.getpass ("\n\t\tEnter your password: ")
         if (password) == db[str(acc_no)]['password']:
-            print("\n\n\t\t\tRedirecting...")
+            print("\n\n\t\t\tFetching your details...")
             time.sleep(3)
             os.system('cls')
             print(f"\n\n\t\t\t\t\tWelcome {db[acc_no]['name']}")
