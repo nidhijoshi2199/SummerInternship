@@ -111,7 +111,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": 14,
    "metadata": {},
    "outputs": [
     {
@@ -120,7 +120,7 @@
      "text": [
       "['java', 'c', 'c++', 'python', 'ruby', 'perl', 'swift']\n",
       "<class 'list'>\n",
-      "409836604040\n"
+      "105786874440\n"
      ]
     }
    ],
@@ -478,33 +478,19 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 45,
+   "execution_count": 11,
    "metadata": {},
    "outputs": [
     {
-     "data": {
-      "text/plain": [
-       "['R',\n",
-       " 'c#',\n",
-       " 'vue',\n",
-       " 'css',\n",
-       " 'html',\n",
-       " 'javascript',\n",
-       " 'php',\n",
-       " 'bash',\n",
-       " 'r',\n",
-       " 'swift',\n",
-       " 'perl',\n",
-       " 'ruby',\n",
-       " 'python',\n",
-       " 'c++',\n",
-       " 'c',\n",
-       " 'java']"
-      ]
-     },
-     "execution_count": 45,
-     "metadata": {},
-     "output_type": "execute_result"
+     "ename": "NameError",
+     "evalue": "name 'mylist' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-11-1a4e01526a94>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[1;32m----> 1\u001b[1;33m \u001b[0mmylist\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mreverse\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      2\u001b[0m \u001b[0mmylist\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'mylist' is not defined"
+     ]
     }
    ],
    "source": [
@@ -514,17 +500,17 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 43,
+   "execution_count": 12,
    "metadata": {},
    "outputs": [
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "409837541560\n",
-      "409837541560\n",
-      "409836520424\n",
-      "409837541560\n"
+      "105787406576\n",
+      "105787406576\n",
+      "105787441480\n",
+      "105787406576\n"
      ]
     }
    ],
@@ -993,20 +979,12 @@
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD
-   "execution_count": null,
-=======
    "execution_count": 1,
->>>>>>> ede2c73bb3f0b8636bcd1626f88ffb97cccaa654
    "metadata": {},
    "outputs": [],
    "source": [
     "from random import randint\n",
     "# list compression\n",
-<<<<<<< HEAD
-    "mylist = [ randint(1,10) for var in range(30) ] "
-   ]
-=======
     "mylist = [ randint(1,10) for var in range(30) ]"
    ]
   },
@@ -1128,11 +1106,221 @@
   },
   {
    "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "spam.append('abc')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam.index('abc')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 'abc', 'abc']"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 'abc', 'abc', 'java', 'c', 'c++', 'python', 'ruby', 'perl', 'swift']"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam+mylist"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 'abc', 'abc', 1, 2, 'abc', 'abc']"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam*2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 'abc', 'abc', 6, 6]"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam.append(6)\n",
+    "spam"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 'abc', 'abc', 10, 10, 6, 6]"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam.insert(4,10)\n",
+    "spam"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "del spam[4]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "spam.remove(6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 'abc', 'abc', 10, 6]"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 'abc', 'abc', 10, 6]"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam[:]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'str' object does not support item assignment",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-26-807fdf6b7a03>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[0mname\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;34m\"nidhi joshi\"\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0mname\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m5\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;34m'b'\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m: 'str' object does not support item assignment"
+     ]
+    }
+   ],
+   "source": [
+    "name=\"nidhi joshi\"\n",
+    "name[5]='b'"
+   ]
+  },
+  {
+   "cell_type": "code",
    "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": []
->>>>>>> ede2c73bb3f0b8636bcd1626f88ffb97cccaa654
   }
  ],
  "metadata": {
